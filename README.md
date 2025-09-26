@@ -32,6 +32,11 @@ For each payment mode, the system must print a confirmation message indicating:
 
 - Placeholder logic should be available for future integration with actual payment processing APIs.
 
+- ****************************************************************************
+### Observation
+- Adding a new payment mode requires modifying the `checkout` function.
+- The `checkout` function handles both control logic and output, making it harder to maintain or extend
+
 #### C++ Implementtaion
 ```
 #include <iostream>
